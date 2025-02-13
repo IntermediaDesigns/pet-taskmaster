@@ -13,9 +13,9 @@ import Link from "next/link.js";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white p-10">
+    <footer className="bg-primary/90 text-white p-10 bottom-0 sticky w-full h-[250px]">
       <div className="flex justify-between gap-10">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
           <h2 className="font-Sansita text-3xl text-muted">Pet Taskmaster</h2>
           <p className="font-Jura text-xl text-secondary w-[300px]">
             Unleash the joy of virtual companionship.
@@ -61,29 +61,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
-          <h2>Links</h2>
+        <div className="flex flex-col gap-4 items-center">
+          <h2 className="font-Jura text-2xl">Links</h2>
           <ul>
-            <li>
+            <li className="font-Jura text-xl text-ltgreen hover:text-ltblue">
               <Link href={"/"}>Home</Link>
             </li>
-            <li>
-              <ScrollLink to="aboutSection" smooth={true} duration={500}>
+            <li className="font-Jura text-xl cursor-pointer text-ltgreen hover:text-ltblue">
+              <ScrollLink to="about" smooth={true} duration={500}>
                 About
               </ScrollLink>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div className="flex items-center justify-center text-black text-xl bg-button1 rounded-full w-12 h-12 cursor-pointer hover:bg-hover1">
           <GoMoveToTop onClick={() => window.scrollTo(0, 0)} />
         </div>
       </div>
 
-      <div className="text-center mt-10 font-Jura">
-        <div>
-          <FaRegCopyright /> 2024 Pet Taskmaster. All rights reserved.
-        </div>
+      <div className="mt-10 font-Jura flex justify-center items-center gap-2 ml-8">
+        <FaRegCopyright /> 2024 Pet Taskmaster. All rights reserved.
       </div>
     </footer>
   );

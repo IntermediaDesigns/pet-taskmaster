@@ -28,7 +28,7 @@ export default function Login({ user }) {
 
   return (
     <>
-      <div>
+      <div className='h-screen flex justify-center items-center'>
         {!user.id ? (
           <div>
             <form onSubmit={handleLogin}>

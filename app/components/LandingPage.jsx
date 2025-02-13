@@ -75,7 +75,7 @@ export default function LandingPage({ user, collection }) {
       </section>
 
       {/* About Container */}
-      <section className="h-[980px] bg-primary/90">
+      <section id="about" className="h-[980px] bg-primary/90">
         <div className="p-8">
           <div>
             <p className="font-Sansita text-5xl font-bold text-muted">ABOUT</p>
@@ -172,7 +172,7 @@ export default function LandingPage({ user, collection }) {
         </div>
       </section>
       {/*  Task Container */}
-      <section className="h-[1100px] p-8">
+      <section className="h-[1050px] p-8">
         <div className="flex flex-col items-center gap-8">
           <p className="font-Sansita text-6xl">Complete Tasks!</p>
           <div className="flex flex-col justify-between items-center gap-7 text-center">
