@@ -55,7 +55,6 @@ export default async function Navbar() {
       }),
     ]);
 
-    // Verify wallet exists
     if (!wallet) {
       throw new Error("Wallet not found for user");
     }
@@ -75,7 +74,7 @@ export default async function Navbar() {
             </div>
           </div>
 
-          <p>Pet Taskmaster</p>
+          <p className="font-Sansita text-6xl text-accent">Pet Taskmaster</p>
 
           <div>
             <div>
