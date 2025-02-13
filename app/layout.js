@@ -1,6 +1,12 @@
 import Navbar from "./(navbar)/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import "./globals.css";
+import localFont from 'next/font/local'
+
+export const Pokemon = localFont({ src: './fonts/pokemon/Pokemon.ttf',
+  format: 'truetype',
+  variable: '--font-Pokemon'
+});
 export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Pet Taskmaster",

@@ -46,57 +46,59 @@ export default function PokemonDetails({
               background: `url("/poke300.png"), ${gradientBackground}`,
             }}
             onClick={handleClick}
+            className="rounded-md"
           >
-            <div key={pokemon.pokedexId}>
-              <div>
-                <p>
+            <div key={pokemon.pokedexId} className="flex flex-col items-center">
+              <div className="flex flex-col items-center w-[205px] h-[267px]">
+                <p className="font-Sansita text-xl pt-3 text-center">
                   {pokemon.capitalizedName || pokemon.name}
                 </p>
 
-                <div>
-                  <div>
+                <div className="flex flex-col items-center">
+                  <div className="flex flex-col">
                     {pokemon.isRare && (
-                      <p>
+                      <p className="font-Jura text-md pb-1">
                         <span>🌟</span> Rare
                       </p>
                     )}
 
                     {pokemon.isShiny && (
-                      <p>
-                        <span>✨</span> Shiny
+                      <p className="font-Jura text-md">
+                        <span className="text-gray-300">✨</span> Shiny
                       </p>
                     )}
                     {!pokemon.isRare && !pokemon.isShiny && (
-                      <p>Common</p>
+                      <p className="font-Jura text-md pb-1">Common</p>
                     )}
                   </div>
-                  <p>Type: {pokemon.type}</p>
+                  <p className="font-Jura text-md">Type: {pokemon.type}</p>
                   <img
                     // className={`${styles.pokemon} ${
                     //   isSelected ? styles.selectedPokemon : ""
                     // }`}
                     src={pokemon.spriteUrl}
                     alt={`${pokemon.name} sprite`}
+                    className="w-[110px] top-[-15px] relative z-10 p-0 m-0"
                   />
                 </div>
                 {pokemon.isPokedexIdInCollection ? (
-                  <MdCatchingPokemon />
+                  <MdCatchingPokemon className="text-ltgreen" />
                 ) : !isProfilePage ? (
-                  <p>Collect me!</p>
+                  <p className="text-md font-Jura text-ltblue relative top-[-20px]">Collect me!</p>
                 ) : (
                   <MdCatchingPokemon />
                 )}
                 {pokemon.nickname ? (
-                  <p>
+                  <p className="font-Pokemon text-2xl">
                     {pokemon.isPaused
                       ? `💤 ${pokemon.nickname} 💤`
                       : pokemon.nickname}
                   </p>
                 ) : (
-                  <p>Name Me!</p>
+                  <p className="font-Pokemon text-2xl tracking-wider relative top-[-25px] ">Name Me!</p>
                 )}
               </div>
-              <p>Pokedex #{pokemon.pokedexId}</p>{" "}
+              <p className="font-Jura text-2xl relative top-[-20px]">Pokedex #{pokemon.pokedexId}</p>{" "}
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Pokedex from "@/app/components/Pokedex.jsx";
-import { fetchUser } from "@/lib/fetchUser.js";
-import { prisma } from "@/lib/prisma.js";
+import { fetchUser } from "../../lib/fetchUser.js";
+import { prisma } from "../../lib/prisma.js";
 
 export default async function PokedexPage() {
   const user = await fetchUser();

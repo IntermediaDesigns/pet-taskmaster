@@ -1,6 +1,6 @@
 import Store from "@/app/components/Store.jsx";
-import { prisma } from "@/lib/prisma";
-import { fetchUser } from "@/lib/fetchUser";
+import { prisma } from "../../lib/prisma";
+import { fetchUser } from "../../lib/fetchUser";
 
 export default async function StorePage() {
   const user = await fetchUser();

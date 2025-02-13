@@ -91,11 +91,11 @@ export default function StoreInventoryPets({
 
   return (
     <>
-      <div>
+      <div className="flex flex-col items-center">
         {inventoryArray && (
-          <div>
+          <div className="grid grid-cols-5 gap-16">
             {inventoryArray.map((pokemon) => (
-              <div key={pokemon.pokedexId}>
+              <div key={pokemon.pokedexId} className="flex justify-center">
                 <div>
                   <PokemonDetails
                     key={pokemon.pokedexId}
@@ -107,6 +107,7 @@ export default function StoreInventoryPets({
                   {isStore && user.id && (
                     <button
                       onClick={() => handleSelectPurchase(pokemon)}
+                      className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg shadow-xl hover:bg-hover1"
                     >
                       Buy Pet for <RiCoinsFill />
                       {pokemon.cost}

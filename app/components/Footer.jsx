@@ -13,23 +13,24 @@ import Link from "next/link.js";
 
 export default function Footer() {
   return (
-    <div>
-      <div>
-        <div>
-          <h2>Pet Taskmaster</h2>
-          <p>
+    <footer className="bg-primary text-white p-10">
+      <div className="flex justify-between gap-10">
+        <div className="flex flex-col">
+          <h2 className="font-Sansita text-3xl text-muted">Pet Taskmaster</h2>
+          <p className="font-Jura text-xl text-secondary w-[300px]">
             Unleash the joy of virtual companionship.
           </p>
         </div>
 
-        <div>
-          <p>Follow us!</p>
+        <div className="flex flex-col gap-4 items-center">
+          <p className="font-Jura text-2xl">Follow us!</p>
 
-          <div>
+          <div className="flex gap-4">
             <a
               href="https://twitter.com/imdesignsllc"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-3xl text-ltgreen hover:text-ltblue"
             >
               <FaTwitter />
             </a>
@@ -37,6 +38,7 @@ export default function Footer() {
               href="https://www.facebook.com/Pokemon"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-3xl text-ltgreen hover:text-ltblue"
             >
               <FaFacebook />
             </a>
@@ -44,6 +46,7 @@ export default function Footer() {
               href="https://github.com/Moreen-n/Moreen-n"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-3xl text-ltgreen hover:text-ltblue"
             >
               <FaGithub />
             </a>
@@ -51,6 +54,7 @@ export default function Footer() {
               href="https://instagram.com/moryn_molly"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-3xl text-ltgreen hover:text-ltblue"
             >
               <FaInstagram />
             </a>
@@ -76,9 +80,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div>
-        <FaRegCopyright /> 2024 Pet Taskmaster. All rights reserved.
+      <div className="text-center mt-10 font-Jura">
+        <div>
+          <FaRegCopyright /> 2024 Pet Taskmaster. All rights reserved.
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }

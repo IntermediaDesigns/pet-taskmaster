@@ -15,6 +15,7 @@ const config = {
         accent: "#d5f0c1",
         muted: "#f9f7c9",
         ltgreen: "#a1f8c3",
+        ltblue: "#46b9c5",
         error: "var(--error)",
         success: "var(--success)",
         warning: "var(--warning)",
@@ -28,6 +29,7 @@ const config = {
         Sansita: ["Sansita", "sans-serif"],
         TenorSans: ["Tenor Sans", "sans-serif"],
         VarelaRound: ["Varela Round", "sans-serif"],
+        Pokemon: ["Pokemon", "sans-serif"],
       },
       backgroundImage: {
         button1: 'linear-gradient(to right, #f9f7c9, #e5bf22)',
