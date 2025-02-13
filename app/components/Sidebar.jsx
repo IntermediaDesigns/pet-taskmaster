@@ -40,28 +40,31 @@ export default function Sidebar({ user }) {
   return (
     <>
       <div ref={sidebarRef}>
-        <div>
-          <div>
+        <div className="flex items-center justify-between p-4 gap-4">
+          <div className="flex items-center justify-between ">
             <MdCatchingPokemon
               onClick={toggleSidebar}
+              className="text-4xl cursor-pointer text-black bg-button1 rounded-full hover:bg-hover1"
             />
           </div>
           <div>
-            {!isSidebarOpen && <span>Menu</span>}
+            {!isSidebarOpen && <span className="text-muted font-Jura text-lg">Menu</span>}
           </div>
         </div>
 
         {isSidebarOpen && (
-          <div>
+          <div className="flex flex-col items-center justify-center space-y-4 p-4 bg-accent w-40 shadow-lg rounded mt-6 absolute">
             <Link
               href={"/pokedex"}
               onClick={handleLinkClick}
+              className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
             >
               Pokedex
             </Link>
             <Link
               href={"/store"}
               onClick={handleLinkClick}
+              className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
             >
               Store
             </Link>
@@ -70,6 +73,7 @@ export default function Sidebar({ user }) {
               <Link
                 href={`/user/${user.id}`}
                 onClick={handleLinkClick}
+                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
               >
                 Profile
               </Link>

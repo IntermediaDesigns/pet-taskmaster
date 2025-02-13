@@ -14,21 +14,32 @@ export default async function Navbar() {
     if (!user?.id) {
       return (
         <nav className="h-24 w-full bg-primary/90 fixed">
-          <div className=" flex items-center justify-evenly">
+          <div className="flex items-center justify-between px-4 py-2">
+            <div className="ml-32">
+              <Sidebar user={user} />
+            </div>
+
+            <p className="font-Sansita text-6xl text-accent">Pet Taskmaster</p>
+
+            <div className="flex items-center space-x-4">
+              <Link
+                href={"/login"}
+                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+              >
+                Login
+              </Link>
+              <Link
+                href={"/register"}
+                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+              >
+                Sign Up
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-col absolute top-0">
             <Link href={"/"}>
               <img src="/Logo.png" alt="Logo" className="w-32 rounded-br-3xl" />
             </Link>
-            <div className="flex justify-between items-center py-4">
-              <p>Pet Taskmaster</p>
-
-              <div>
-                <Link href={"/login"}>Login</Link>
-                <Link href={"/register"}>Sign Up</Link>
-              </div>
-            </div>
-          </div>
-          <div>
-            <Sidebar user={user} />
           </div>
         </nav>
       );

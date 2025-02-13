@@ -29,6 +29,11 @@ const config = {
         TenorSans: ["Tenor Sans", "sans-serif"],
         VarelaRound: ["Varela Round", "sans-serif"],
       },
+      backgroundImage: {
+        button1: 'linear-gradient(to right, #f9f7c9, #e5bf22)',
+        hover1: 'linear-gradient(to right, #a1f8c3, #46b9c5)',
+        button2: 'linear-gradient(to right, #d5f0c1, #a1f8c3)',
+      }
     },
   },
   plugins: [],
