@@ -1,7 +1,7 @@
 import Link from "next/link.js";
 import PokemonDetails from "../../../components/PokemonDetails.jsx";
-import { fetchUser } from "../../lib/fetchUser.js";
-import { prisma } from "../../lib/prisma.js";
+import { fetchUser } from "../../../lib/fetchUser.js";
+import { prisma } from "../../../lib/prisma.js";
 
 export default async function ProfilePage() {
   const user = await fetchUser();

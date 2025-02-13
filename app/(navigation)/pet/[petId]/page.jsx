@@ -1,7 +1,7 @@
 import React from "react";
-import { prisma } from "../../lib/prisma.js";
+import { prisma } from "../../../lib/prisma.js";
 import SinglePetInfo from "../../../components/SinglePetPage.jsx";
-import { fetchUser } from "../../lib/fetchUser.js";
+import { fetchUser } from "../../../lib/fetchUser.js";
 
 export default async function PetPage({ params }) {
   const petId = params.petId;

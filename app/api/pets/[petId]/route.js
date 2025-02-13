@@ -1,5 +1,5 @@
-import { fetchUser } from "@/lib/fetchUser.js";
-import { prisma } from "@/lib/prisma.js";
+import { fetchUser } from "../../../lib/fetchUser.js";
+import { prisma } from "../../../lib/prisma.js";
 import { NextResponse } from "next/server.js";
 
 //Get Pet by ID
