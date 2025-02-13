@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
-import { prisma } from "@/lib/prisma.js";
+import { prisma } from "../../../lib/prisma.js";
 
 export async function POST(req) {
   try {
