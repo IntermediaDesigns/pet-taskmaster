@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=Philosopher:wght@400;700&family=Quattrocento+Sans:wght@400;700&family=Sansita:wght@400;700;800;900&family=Tenor+Sans&family=Varela+Round&display=swap");
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
