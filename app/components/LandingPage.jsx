@@ -43,8 +43,8 @@ export default function LandingPage({ user, collection }) {
   return (
     <>
       {/* Hero Container */}
-      <div>
-        <div>
+      <section className="h-96 mt-32 flex items-center justify-center ">
+        <div className="flex justify-between items-center w-[700px] gap-10">
           <div>
             {randomPokemon && (
               <div>
@@ -70,7 +70,7 @@ export default function LandingPage({ user, collection }) {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* About Container */}
       <div id="aboutSection">

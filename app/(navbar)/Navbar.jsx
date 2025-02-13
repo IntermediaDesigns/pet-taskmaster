@@ -13,7 +13,7 @@ export default async function Navbar() {
     const user = await fetchUser();
     if (!user?.id) {
       return (
-        <nav className="h-24 w-full bg-primary/90 fixed">
+        <nav className="h-24 w-full bg-primary/90 fixed top-0 z-50">
           <div className="flex items-center justify-between px-4 py-2">
             <div className="ml-32">
               <Sidebar user={user} />
