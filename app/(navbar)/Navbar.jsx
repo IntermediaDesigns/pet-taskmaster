@@ -13,7 +13,7 @@ export default async function Navbar() {
     const user = await fetchUser();
     if (!user?.id) {
       return (
-        <nav className="h-24 w-full bg-primary/90 fixed top-0 z-50">
+        <nav className="h-24 w-full bg-primary/90 fixed top-0 z-50 shadow-lg">
           <div className="flex items-center justify-between px-4 py-2">
             <div className="ml-32">
               <Sidebar user={user} />
@@ -24,13 +24,13 @@ export default async function Navbar() {
             <div className="flex items-center space-x-4">
               <Link
                 href={"/login"}
-                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg shadow-xl hover:bg-hover1"
               >
                 Login
               </Link>
               <Link
                 href={"/register"}
-                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg shadow-xl hover:bg-hover1"
               >
                 Sign Up
               </Link>
@@ -38,7 +38,7 @@ export default async function Navbar() {
           </div>
           <div className="flex flex-col absolute top-0">
             <Link href={"/"}>
-              <img src="/Logo.png" alt="Logo" className="w-32 rounded-br-3xl" />
+              <img src="/Logo.png" alt="Logo" className="w-32 rounded-br-3xl shadow-lg" />
             </Link>
           </div>
         </nav>

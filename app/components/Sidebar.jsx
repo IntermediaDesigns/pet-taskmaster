@@ -44,7 +44,7 @@ export default function Sidebar({ user }) {
           <div className="flex items-center justify-between ">
             <MdCatchingPokemon
               onClick={toggleSidebar}
-              className="text-4xl cursor-pointer text-black bg-button1 rounded-full hover:bg-hover1"
+              className="text-4xl cursor-pointer text-black bg-button1 rounded-full shadow-xl hover:bg-hover1"
             />
           </div>
           <div>
@@ -57,14 +57,14 @@ export default function Sidebar({ user }) {
             <Link
               href={"/pokedex"}
               onClick={handleLinkClick}
-              className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+              className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg shadow-xl hover:bg-hover1"
             >
               Pokedex
             </Link>
             <Link
               href={"/store"}
               onClick={handleLinkClick}
-              className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+              className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg shadow-xl hover:bg-hover1"
             >
               Store
             </Link>
@@ -73,7 +73,7 @@ export default function Sidebar({ user }) {
               <Link
                 href={`/user/${user.id}`}
                 onClick={handleLinkClick}
-                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg hover:bg-hover1"
+                className="rounded-xl bg-button1 px-4 py-2 text-black text-center font-Jura text-lg shadow-xl hover:bg-hover1"
               >
                 Profile
               </Link>
