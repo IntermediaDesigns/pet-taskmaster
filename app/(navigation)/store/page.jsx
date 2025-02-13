@@ -1,4 +1,4 @@
-import Store from "@/app/components/Store.jsx";
+import Store from "../../components/Store.jsx";
 import { prisma } from "../../lib/prisma";
 import { fetchUser } from "../../lib/fetchUser";
 

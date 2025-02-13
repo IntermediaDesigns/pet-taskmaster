@@ -1,4 +1,4 @@
-import Pokedex from "@/app/components/Pokedex.jsx";
+import Pokedex from "../../components/Pokedex.jsx";
 import { fetchUser } from "../../lib/fetchUser.js";
 import { prisma } from "../../lib/prisma.js";
 

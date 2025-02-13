@@ -101,7 +101,7 @@ export default function Store({ user, wallet, collection }) {
 
   return (
     <>
-      <div>
+      <div className="h-screen flex justify-center items-center">
         {section === "selectPet" && (
           <div>
             <p>Featured Pets of the Day!</p>

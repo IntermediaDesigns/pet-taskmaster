@@ -1,6 +1,6 @@
-import SelectPet from "@/app/components/SelectPet.jsx";
-import { fetchUser } from "@/lib/fetchUser.js";
-import { prisma } from "@/lib/prisma.js";
+import SelectPet from "../../components/SelectPet.jsx";
+import { fetchUser } from "../../lib/fetchUser.js";
+import { prisma } from "../../lib/prisma.js";
 
 export default async function SelectPetPage() {
   const user = await fetchUser();
